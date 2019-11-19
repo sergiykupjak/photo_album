@@ -1,198 +1,227 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Photo_album</title>
+    <title>Photo Album</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-            <img src="img/logo.png" alt="home">
-            <h3>myalbum</h3>
-            <img src="img/house-icon.png" alt="home">
-            <select>
-                <option>Serhii</option>
+            <div class="left-side">
+              <img class="logo" src="img/logo.png" alt="home">
+              <span class="owner">Sergiy Kupyak</span>
+            </div>
+
+            <div class="right-side">
+              <select>
+                <option>Serhiy</option>
                 <option>Kateryna</option>
                 <option>Mark</option>
                 <option>Marina</option>
-            </select>
-        <form method="get" action="">
-            <div class="button_log" align="center"><a class="log" href="page_Log" target="_blank" rel="page_Log">Log_in</a></div>
-        </form>
-        <form method="get" action="">
-            <div class="button_register" align="center"><a class="register" href="button_Register" target="_blank" rel="button_Register">Register</a></div>
-        </form>
+              </select>
+
+              <button class="login-btn">Log in</button>
+              <button class="register-btn">Register</button>
+            </div>
     </header>
+
     <main>
-        <img src="img/main-img.png" alt="home">
-        <a href=""><img src="img/chevron-left.jpg" alt="home" height="50" width="40"></a>
-        <a href=""><img src="img/chevron-left.jpg" alt="home" height="50" width="40"></a>
-        <a href=""><img src="img/chevron-left.jpg" alt="home" height="50" width="40"></a>
-        <h1>Personal Family Photo Album</h1>
-    </main>
-    <hr>
-    <div id="bullets" style="padding: 48px 36px;"></div>
-    <h2>Smarter Storytelling</h2>
-        <div class="bulletlist">
-            <div class="bullet">
-            </div>
-            <div class="icon">
-                <img src="img/icon/play-button.png" alt="home">
-            </div>
-            <div class="inner">
-                <h3>Photos &amp; Videos</h3>
-                <div class="text">
-                Combine photos and videos into beautiful albums.
+        <section class="main-photo">
+            <p>Personal Family Photo Album</p>
+        </section>
+        <h2 class="section-header">Album Gallery</h2>
+        <section class="gallery">
+            
+
+            <div class="albums">
+                <div class="album">
+                    <a target="_blank" href="vyd.html">
+                        <img src="img/album_1/img_first.png" alt="Slavske Album">
+                      <div class="desc">
+                          <p class="album-title">Slavske</p>
+                          <p class="album-date">January 2017</p>
+                          <p class="album-items">6 photos</p>
+                      </div>
+                    </a>
+                </div>
+
+                <div class="album">
+                    <a target="_blank" href="img/album_2/img_first.png">
+                        <img src="img/album_2/img_first.png" alt="Paraplanning Album">
+
+                        <div class="desc">
+                            <p class="album-title">Paraplanning</p>
+                            <p class="album-date">September 2017</p>
+                          <p class="album-items">6 photos</p>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="album">
+                    <a target="_blank" href="img/album_3/img_first.png">
+                        <img src="img/album_3/img_first.png" alt="Paraplanning Album">
+
+                        <div class="desc">
+                            <p class="album-title">Nadvirna</p>
+                            <p class="album-date">July 2015</p>
+                          <p class="album-items">6 photos</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="album">
+                    <a target="_blank" href="img/album_4/img_first.png">
+                        <img src="img/album_4/img_first.png" alt="Paraplanning Album">
+
+                        <div class="desc">
+                            <p class="album-title">Karpatian</p>
+                            <p class="album-date">May 2014</p>
+                          <p class="album-items">6 photos</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="bullet">
-          <div class="icon">
-            <img src="img/icon/idea.png" alt="edit">
-          </div>
-          <div class="inner">
-            <h3>Smart design</h3>
-            <div class="text">
-              Let our smart algorithms lay out your album for you.
+        </section>
+
+        <hr>
+
+        <section class="bullets">
+            <h2 class="section-header">Smarter Storytelling</h2>
+            <div class="bulletlist">
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/play-button.png" alt="home">
+                    </div>
+                    <div class="inner">
+                        <h3>Photos &amp; Videos</h3>
+                        <div class="text">Combine photos and videos into beautiful albums.</div>
+                    </div>
+                </div>
+
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/idea.png" alt="edit">
+                    </div>
+                    <div class="inner">
+                        <h3>Smart design</h3>
+                        <div class="text">Let our smart algorithms lay out your album for you.</div>
+                    </div>
+                </div>
+
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/edit.png" alt="edit">
+                    </div>
+                    <div class="inner">
+                        <h3>Customize</h3>
+                        <div class="text">Personalize your album to match any mood or style.</div>
+                    </div>
+                </div>
+
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/fax.png" alt="edit">
+                    </div>
+                    <div class="inner">
+                        <h3>Print &amp; Online</h3>
+                        <div class="text">Relive it the way you prefer, online or in print.</div>
+                    </div>
+                </div>
+
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/share.png" alt="edit">
+                    </div>
+                    <div class="inner">
+                        <h3>Privacy &amp; Social</h3>
+                        <div class="text">Your albums are private until you choose to share them.</div>
+                    </div>
+                </div>
+
+                <div class="bullet">
+                    <div class="icon">
+                        <img src="img/icon/tabs.png" alt="edit">
+                    </div>
+                    <div class="inner">
+                        <h3>Free</h3>
+                        <div class="text">
+                        Photos and videos are stored in high quality. <a href="/pricing">Upgrade</a> to store the originals.
+                        </div>
+                    </div>
+                  <div class="clear"></div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="bullet">
-          <div class="icon">
-            <img src="img/icon/edit.png" alt="edit">
-          </div>
-                  <div class="inner">
-            <h3>Customize</h3>
-            <div class="text">
-              Personalize your album to match any mood or style.
+        </section>
+
+        <hr>
+
+        <section>
+          <a target="_blank" href="https://apps.apple.com/us/app/softserve-discount/id626146071" class="app_button"><img src="//static.myalbum.io/res/v-63vmmus5nf/img/core/base/apple_appstore.svg" alt="apple" height="70" /></a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.softserve.discount" class="app_button"><img src="//static.myalbum.io/res/v-63vmmus5nf/img/core/base/google_playstore.svg"  alt="google" height="70" /></a>
+          <nav class="sections padding">
+            <div class="section">
+              <h2 class="title">MyAlbum</h2>
+              <a href="/">Home</a>
+              <a href="/inspiration">Inspiration</a>
+              <a href="https://myalbum.zendesk.com/">FAQ</a>
+              <a href="/contact">Contact</a>
+              <a href="/pricing?redirect=1&ref=footer">Pricing</a>
             </div>
-          </div>
-        </div>
-        <div class="bullet">
-          <div class="icon">
-            <img src="img/icon/fax.png" alt="edit">
-          </div>
-          <div class="inner">
-            <h3>Print &amp; Online</h3>
-            <div class="text">
-              Relive it the way you prefer, online or in print.
+            <div class="section">
+              <h2 class="title">Products</h2>
+              <a href="/premium?redirect=1&ref=footer">MyAlbum Premium</a>
+              <a href="/make-photo-book">Photo books</a>
+              <a href="https://itunes.apple.com/app/id922005321" target="_blank">iPhone app</a>
+              <a href="https://play.google.com/store/apps/details?id=com.myalbum.appv4" target="_blank">Android App</a>
+              <a href="/wordpress">WordPress</a>
             </div>
-          </div>
-        </div>
-        <div class="bullet">
-          <div class="icon">
-            <img src="img/icon/share.png" alt="edit">
-          </div>
-          <div class="inner">
-            <h3>Privacy &amp; Social</h3>
-            <div class="text">
-              Your albums are private until you choose to share them.
+            <div class="section">
+              <h2 class="title">For professionals</h2>
+              <a href="/pro?redirect=1&ref=footer">MyAlbum Pro</a>
+              <a href="/photo-books-for-business">Bulk orders</a>
+              <a href="/photocontests">Photo Contests</a>
+              <a href="/ngo">NGOs</a>
+              <a href="/school">Schools</a>
             </div>
-          </div>
-        </div>
-        <div class="bullet">
-            <div class="icon">
-             <img src="img/icon/tabs.png" alt="edit">
+            <div class="section">
+              <h2 class="title">Follow us</h2>
+              <a href="https://www.facebook.com/JoinMyalbum" target="_blank">Facebook</a>
+              <a href="https://twitter.com/JoinMyAlbum" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/myalbum" target="_blank">LinkedIn</a>
             </div>
-            <div class="inner">
-                <h3>Free</h3>
-            <div class="text">
-             Photos and videos are stored in high quality. <a href="/pricing">Upgrade</a> to store the originals.
-            </div>
+          </nav>
+        </section>
+
+        <hr>
+
+        <div class="container">
+            <form action="https://formspree.io/xoqazrdw" method="POST">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="name..">
+                <label for="lname">Email Address</label>
+                <input type="text" id="lname" name="Email" placeholder="Email..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="ukrain">Ukrain</option>
+                    <option value="mordor">Mordor</option>
+                    <option value="asgard">Asgard</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Send">
+            </form>
         </div>
-        <div class="clear"></div>
-    </div>
-    <hr>
-    <section id="curated" style="padding: 107.5px 80.6px;">
-        <h2>My amazing stories</h2>
-        <div id="albums">
-            <article class="album">
-                <a href=""><img src="img/album1/img_first.png" alt="album1" height="550" width="540">
-                    <h5>6 elements</h5>
-                    <h2>Slavske</h2>
-                    <h5>Januar 2017</h5>
-                </a>
-            </article>
-            <article class="album">
-                <a href=""><img src="img/album_2/img_first.png" alt="album2" height="550" width="540">
-                    <h5>6 elements</h5>
-                    <h2>Paraplaning</h2>
-                    <h5>September 2017</h5>
-                </a>
-            </article>
-            <article class="album">
-                <a href=""><img src="img/album_3/img_first.png" alt="album3" height="550" width="540">
-                    <h5>6 elements</h5>
-                    <h2>Paraplaning</h2>
-                    <h5>September 2017</h5>
-                </a>
-            </article>
-            <article class="album">
-                <a href=""><img src="img/album_4/img_first.png" alt="album4" height="550" width="540">
-                    <h5>6 elements</h5>
-                    <h2>Paraplaning</h2>
-                    <h5>September 2017</h5>
-                </a>
-            </article>
-        </div>
-    </section>
-    <a target="_blank" href="https://apps.apple.com/us/app/softserve-discount/id626146071" class="app_button"><img src="//static.myalbum.io/res/v-63vmmus5nf/img/core/base/apple_appstore.svg" alt="apple" height="70" /></a>
-    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.softserve.discount" class="app_button"><img src="//static.myalbum.io/res/v-63vmmus5nf/img/core/base/google_playstore.svg"  alt="google" height="70" /></a>
-    <nav class="sections padding">
-        <div class="section">
-            <h2 class="title">MyAlbum</h2>
-            <a href="/">Home</a>
-            <a href="/inspiration">Inspiration</a>
-            <a href="https://myalbum.zendesk.com/">FAQ</a>
-            <a href="/contact">Contact</a>
-            <a href="/pricing?redirect=1&ref=footer">Pricing</a>
-        </div>
-        <div class="section">
-            <h2 class="title">Products</h2>
-            <a href="/premium?redirect=1&ref=footer">MyAlbum Premium</a>
-            <a href="/make-photo-book">Photo books</a>
-            <a href="https://itunes.apple.com/app/id922005321" target="_blank">iPhone app</a>
-            <a href="https://play.google.com/store/apps/details?id=com.myalbum.appv4" target="_blank">Android App</a>
-            <a href="/wordpress">WordPress</a>
-        </div>
-        <div class="section">
-            <h2 class="title">For professionals</h2>
-            <a href="/pro?redirect=1&ref=footer">MyAlbum Pro</a>
-            <a href="/photo-books-for-business">Bulk orders</a>
-            <a href="/photocontests">Photo Contests</a>
-            <a href="/ngo">NGOs</a>
-            <a href="/school">Schools</a>
-        </div>
-        <div class="section">
-            <h2 class="title">Follow us</h2>
-            <a href="https://www.facebook.com/JoinMyalbum" target="_blank">Facebook</a>
-            <a href="https://twitter.com/JoinMyAlbum" target="_blank">Twitter</a>
-            <a href="https://www.linkedin.com/company/myalbum" target="_blank">LinkedIn</a>
-        </div>
-    </nav>
-    <div class="container">
-        <form action="https://formspree.io/xoqazrdw" method="POST">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="name..">
-            <label for="lname">Email Address</label>
-            <input type="text" id="lname" name="Email" placeholder="Email..">
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="ukrain">Ukrain</option>
-                <option value="mordor">Mordor</option>
-                <option value="asgard">Asgard</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </div>
-    <select class="select" data-width="fit">
-        <option>English</option>
-        <option>Ukranian</option>
+        <select class="select" data-width="fit">
+            <option>English</option>
+            <option>Ukranian</option>
     </select>
+    </main>
+
+    <hr>
+
 </body>
 </html>
-
