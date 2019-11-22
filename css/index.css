@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     color: #575757;
-    max-width: 980px;
     margin: auto;
 }
 
@@ -14,15 +13,16 @@ h1, h2, h3, p, div, nav, header, footer {
 
 header {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex: 1 auto 1;
     justify-content: space-between;
     padding: 10px 15px;
 }
 
 header .left-side,
+header .empty,
 header .right-side {
     display: flex;
-    align-items: center;
 }
 
 header .left-side .logo {
@@ -30,7 +30,7 @@ header .left-side .logo {
 }
 
 header .left-side .owner {
-    width: 180px;
+    width: 140px;
     font-size: 15px;
     border-left: 1px solid #575757;
     padding: 0 0 2px 8px;
@@ -97,7 +97,7 @@ main .main-photo p {
 }
 
 main .gallery {
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 
 main .section-header {
@@ -107,13 +107,22 @@ main .section-header {
 }
 
 main .gallery .albums {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+@media (max-width: 560px){
+main .gallery .albums{
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
 }
 
 main .gallery .albums img {
-    width: 600px;
+    width: 100%;
+    display: block;
 }
 
 main .gallery .albums .album {
@@ -226,21 +235,40 @@ main .contact-form select {
     outline: none;
     background-color: #fff;
 }
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.store{
+    text-align: center;
+    padding: 50px;  
 }
 
-/* Style the submit button with a specific background color etc */
+
+.sections_padding{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto
+
+}
+.section{
+    text-align: center;
+    display: inline-block;
+    margin: 50px;
+}
+nav div a{
+    display: block
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -250,14 +278,35 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+#txt {
+    text-align: center;
+    font-size: 26px;
+}
+#myBtn {
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
