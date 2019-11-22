@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     color: #575757;
     margin: auto;
+    width: 980px;
 }
 
 h1, h2, h3, p, div, nav, header, footer {
